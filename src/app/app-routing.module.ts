@@ -16,11 +16,12 @@ import { ProudactsComponent } from './proudacts/proudacts.component';
 import { BrandsComponent } from './brands/brands.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { AllOrdersComponent } from './all-orders/all-orders.component';
 
 const routes: Routes = [
   {
     path: '',
-    // canActivate:[firstGuard],
+    canActivate: [firstGuard],
     component: BlanckLayoutComponent,
     children: [
       { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'brands', component: BrandsComponent },
       { path: 'wishlist', component: WishlistComponent },
       { path: 'checkout/:id', component: CheckoutComponent },
+      { path: 'allorders', component: AllOrdersComponent },
     ],
   },
 

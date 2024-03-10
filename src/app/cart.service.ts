@@ -58,4 +58,9 @@ export class CartService {
       }
     );
   }
+  getallor(id: any): Observable<any> {
+    return this._HttpClient.get(
+      `https://ecommerce.routemisr.com/api/v1/orders/user/${id}`
+    );
+  }
 }

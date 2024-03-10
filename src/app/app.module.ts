@@ -35,6 +35,7 @@ import { WishredPipe } from './wishred.pipe';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { AllOrdersComponent } from './all-orders/all-orders.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     ProudactsComponent,
     WishredPipe,
     CheckoutComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    AllOrdersComponent
   ],
   imports: [
     BrowserModule,
